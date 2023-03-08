@@ -1,6 +1,22 @@
 {
+    "name": "EmployeeCards",
+    "version": "1.0.0",
+    "description": "OOP",
+    "main": "index.js",
+    "directories": {
+      "lib": "lib",
+      "test": "test"
+    },
+    "scripts": {
+      "test": "jest --verbose test/*"
+    },
+    "author": "",
+    "license": "ISC",
+
   "dependencies": {
-    "inquirer": "^8.2.4",
-    "jest": "^29.5.0"
+    "inquirer": "^8.2.4"
+  },
+  "devDependencies": {
+    "jest": "C:/Users/pauls29.5.0"
   }
 }
