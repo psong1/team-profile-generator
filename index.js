@@ -21,7 +21,7 @@ const createTeam = () => {
             type: 'list',
             name: 'addEmployee',
             message: `What is the employee's role?`,
-            choices: ['Manager', 'Engineer', 'Intern', 'No more team members']
+            choices: ['Manager', 'Engineer', 'Intern', 'All team members have been added!']
         }
     ])
     .then(userInput => {
