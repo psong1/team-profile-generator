@@ -1,12 +1,11 @@
 const generateTeam = team => {
 
-    // create the manager html
     const generateManager = manager => {
         return `
 <div class="card employee-card">
-    <div class="card-header bg-primary text-white">
+    <div class="card-header bg-danger text-white">
         <h2 class="card-title">${manager.getName()}</h2>
-        <h3 class="card-title"><i class="fas fa-mug-hot mr-2"></i>${manager.getRole()}</h3>
+        <h3 class="card-title">${manager.getRole()}</h3>
     </div>
     <div class="card-body">
         <ul class="list-group">
@@ -23,9 +22,9 @@ const generateTeam = team => {
     const generateEngineer = engineer => {
         return `
 <div class="card employee-card">
-    <div class="card-header bg-primary text-white">
+    <div class="card-header bg-danger text-white">
         <h2 class="card-title">${engineer.getName()}</h2>
-        <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>${engineer.getRole()}</h3>
+        <h3 class="card-title">${engineer.getRole()}</h3>
     </div>
     <div class="card-body">
         <ul class="list-group">
@@ -42,9 +41,9 @@ const generateTeam = team => {
     const generateIntern = intern => {
         return `
 <div class="card employee-card">
-    <div class="card-header bg-primary text-white">
+    <div class="card-header bg-danger text-white">
         <h2 class="card-title">${intern.getName()}</h2>
-        <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i>${intern.getRole()}</h3>
+        <h3 class="card-title"></i>${intern.getRole()}</h3>
     </div>
     <div class="card-body">
         <ul class="list-group">
@@ -57,24 +56,24 @@ const generateTeam = team => {
         `;
     };
 
-    const html = [];
+    const htmlCards = [];
 
-    html.push(team
-        .filter(employee => employee.getRole() === "Manager")
+    htmlCards.push(team
+        .filter(employee => employee.getRole() === 'Manager')
         .map(manager => generateManager(manager))
     );
-    html.push(team
-        .filter(employee => employee.getRole() === "Engineer")
+    htmlCards.push(team
+        .filter(employee => employee.getRole() === 'Engineer')
         .map(engineer => generateEngineer(engineer))
-        .join("")
+        .join('')
     );
-    html.push(team
-        .filter(employee => employee.getRole() === "Intern")
+    htmlCards.push(team
+        .filter(employee => employee.getRole() === 'Intern')
         .map(intern => generateIntern(intern))
-        .join("")
+        .join('')
     );
 
-    return html.join("");
+    return htmlCards.join('');
 
 }
 
@@ -97,8 +96,8 @@ module.exports = team => {
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 jumbotron mb-3 team-heading bg-danger">
-                <h1 class="text-center text-white">My Team</h1>
+            <div class="col-12 jumbotron mb-3 team-heading bg-dark">
+                <h1 class="text-center text-white">Introducing My Team</h1>
             </div>
         </div>
     </div>
