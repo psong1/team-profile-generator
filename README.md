@@ -23,7 +23,7 @@ Users can install jest as a dev-dependency by entering 'npm i --save-dev jest' i
 
 ## Link to Video
 
-![mp4](https://watch.screencastify.com/v/qNYgjn07vpCMNLQkMmlY)
+* https://watch.screencastify.com/v/qNYgjn07vpCMNLQkMmlY
 
 ## Contact
 
