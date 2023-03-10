@@ -5,6 +5,12 @@
 This Node.js command-line application take user input and generates page that displays a team and its employees. The command line will provide the user with questions about the employee, which includes their role, name, email, employee ID, and a questions specific to their role.
 When all questions are answered, all responses will be pushed into the index.html and team member's cards will be generated. The application will take the responses and filter the role to provide the right questions for that specific role. Then, it creates a new team array that will contain all of the employees on the team.
 
+## Technologies
+
+* Javascript
+* Node.js
+* Bootstrap
+
 ## Installation
 
 Users can install the application by using the HTTPS and 'git clone' in the terminal, or download the zip file. 
